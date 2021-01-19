@@ -135,9 +135,11 @@ public Double Kel(double input, int convert){
         if ( pil == 5){
             break;
         } else {
-            System.out.print("Apakah anda ingin mengulang kembali [Y/N]");
+			ulang = "n";
+            System.out.print("Apakah anda ingin mengulang kembali [Y/N]" + ulang);
             System.out.println("");
-            ulang = input.next();
+            
+			
         }
        
         }while(ulang.equals("Y")|| ulang.equals("y"));
