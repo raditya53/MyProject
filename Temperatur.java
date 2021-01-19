@@ -66,20 +66,22 @@ public Double Kel(double input, int convert){
         System.out.println("3. Reamur");
         System.out.println("4. Kelvin");
         System.out.println("5. exit");
-        System.out.print("Masukkan pilihan anda ");
-        int pil = input.nextInt();
+		int pil = 1;
+        System.out.print("Masukkan pilihan anda " + pil);
             System.out.println("");
         switch (pil){
             case 1:
                 System.out.println("Anda memilih Celcius");
-                System.out.print("Masukkan suhu ");
-                suhu = input.nextDouble();
+				suhu = 73;
+                System.out.print("Masukkan suhu " + suhu);
+				System.out.println("");
                 System.out.println("ingin di konversikan kemana");
                 System.out.println("1. Fahrenheit");
                 System.out.println("2. Reamur");
                 System.out.println("3. Kelvin");
-                System.out.print("pilihan anda ");
-                convert = input.nextInt();
+				convert = 3;
+                System.out.print("pilihan anda " + convert);
+				System.out.println("");
                 hasil = obj.Cel(suhu, convert);
                 System.out.println("hasil convert dari pilihan anda adalah " + hasil);
                 break;
